@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style/index.css">
+    <title>Company Profile</title>
+</head>
+<body>
+    
+    <header>
+        <nav class="navigation">
+            <a href="index.html"><img class="navigation-img" src="asset/Logo.png" alt="RevoU"></a>
+            <input type="checkbox" id="click">
+            <label for="click" class="navigation-btn">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <ul class="navigation-list">
+                <a href="index.html"><li>Home</li></a>
+                <a href="profile.html"><li>Our Profile</li></a>
+                <a href="#"><li>Portofolio</li></a>
+                <a href="#messageUs"><li>Message Us</li></a>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="introduction">
+        <h1 class="greetings">Hi <span id="user"></span>, Welcome to Website</h1>
+    </section>
+
+    <section id="headquarter">
+        <h1 class="headquarter-title">Our Headquater</h1>
+        <section class="headquarter-all">
+            <div class="city">
+                <img src="asset/iconJakarta.jfif" alt="Jakarta">
+                <div class="city-name"><h1>Jakarta</h1></div>
+            </div>
+            <div class="city">
+                <img src="asset/iconBandung.jfif" alt="Bandung">
+                <div class="city-name"><h1>Bandung</h1></div>
+            </div>
+            <div class="city">
+                <img src="asset/iconSurabaya.jfif" alt="Surabaya">
+                <div class="city-name"><h1>Surabaya</h1></div>
+            </div>
+        </section>
+    </section>
+
+    <footer id="messageUs">
+        <h1 class="messageUs-title">Message Us</h1>
+        <section class="messageUs-form">
+            <div class="messageUs-container">
+                <form name="messageUs-forms" action="#" onsubmit="return validateForm()">
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="name">Nama</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="name" name="name" placeholder="Nama">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="birth">Tanggal Lahir</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="date" id="birth" name="birth">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="gender">Jenis Kelamin</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="radio" id="male" name="gender" value="Laki-laki">
+                            <label for="male">Laki-laki</label>
+                            <input type="radio" id="female" name="gender" value="Perempuan">
+                            <label for="female">Perempuan</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="subject">Pesan</label>
+                        </div>
+                        <div class="col-75">
+                            <textarea id="subject" name="subject" placeholder="Pesan"></textarea>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </div>
+            <div class="messageUs-info">
+                <p>Current Time : <span id="current-time"></span></p>
+                <p>Nama : <span id="name-info"></span></p>
+                <p>Tanggal Lahir : <span id="birth-info"></span></p>
+                <p>Jenis Kelamin : <span id="gender-info"></span></p>
+                <p>Pesan : <span id="message-info"></span></p>
+            </div>
+        </section>
+        <span class="created">
+            <h1>Created by Christian Indrayana Suhendar</h1>
+        </span>
+    </footer>
+
+    <!-- Script JS -->
+    <script src="script.js"></script>
+</body>
+</html>
